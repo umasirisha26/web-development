@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+             
+                 <nav>
+                    <img src="https://thumbs.dreamstime.com/b/portfolio-word-pencil-letter-i-art-design-gallery-concept-vector-conceptual-creative-logo-poster-made-153118072.jpg" class="logo">
+                    <ul>
+                        <li><a href=#header>Home</a></li>
+                        <li><a href=#about>About</a></li>
+                        <li><a href=#projects>Projects</a></li>
+                        <li><a href=#portfolio>Portfolio</a></li>
+                        <li><a href=#contact>Contact</a></li>
+                    </ul>
+                 </nav>
+                </div>
+                 <div class="ctn">
+               
+                   <div class="header-text">
+                    <p>Hi,I'm Uma Sirisha Yetcherla</p>
+                   </div>
+                   <div id="header"></div>
+              </div>
+              <!---------------------about----------------------->
+             <div id="about">
+              <div class="container">
+                <div class="row">
+                  <div class="col1">
+                       <img src="https://thumbs.dreamstime.com/b/business-woman-holding-laptop-computer-wearing-suit-64549342.jpg">
+                  </div>
+                  <div class="col2">
+                       <h1 class="subtitle">About Me</h1>
+                       <p class="paragraph">Hello!
+                        I'm Uma Sirisha,a final year B.tech student specializing in Information Technology at Andhra University College Of Engineering.
+                         Throughout my B.Tech program, I've gained a comprehensive understanding of various aspects of Information Technology, including programming languages such as C,Java & Python, data structures, algorithms, database management, and software development methodologies.
+                        The practical exposure and hands-on experience I've gained through projects and internships have been invaluable in shaping my technical expertise.
+                        As I approach graduation, I am excited to embark on a rewarding career in Information Technology.
+                        I am actively seeking opportunities to work with innovative organizations that value creativity,and foster professional growth.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li>Html</li>
+                                <li>css</li>
+                                <li>Java</li>
+                                <li>Data Structures & Algorithms</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li>Internship at 1stop in Machine Learning</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2020-Current</span><br>B.Tech in Andhra University</li>
+                                <li><span>2018-2020</span><br>Intermediate in Narayana Spark</li>
+                                <li><span>2018</span><br>Schooling in Narayana e-techno</li>
+                            </ul>
+                        </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+            <!-----------------my projects----------------->
+            <div id="projects">
+                <div class="container">
+                    <div class="project-heading">
+                        <h1 class="subtitle">My Projects</h1>
+                    </div>
+                    <div class="projects-list">
+                        <div>
+                            <h2>Diabetes Prediction</h2>
+                            <p>Developed a robust diabetes prediction model utilizing machine learning algorithms and data analysis techniques. 
+                                Leveraged features such as patient health records and lifestyle factors to accurately predict and detect the risk of diabetes onset.</p>
+                        </div>
+                        <div>
+                            <h2>Restaurant Website</h2>
+                            <p>Designed and implemented an engaging restaurant website with a user-friendly interface, showcasing the menu, reservation system, and online ordering functionality. </p>
+                        </div>
+                        <div>
+                            <h2>Tourism Website</h2>
+                            <p>Developed an engaging tourism website using HTML and CSS, showcasing the picturesque destinations in Vizag.
+                                 Integrated captivating images and informative descriptions to entice travelers, fostering an enjoyable user experience and promoting the city's unique attractions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------my work----------------->
+
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="subtitle">My Work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="C:\Users\91863\OneDrive\Pictures\Screenshots\images\Screenshot 2023-07-28 221625.png">
+                            <div class="layer">
+                                <h3>Restaurant website</h3>
+                            </div>
+                        </div>
+                        <div class="work">
+                            
+                          <img src="C:\Users\91863\OneDrive\Pictures\Screenshots\images\Screenshot 2023-07-28 221712.png">
+                          <div class="layer">
+                            <h3>Tourism website</h3>
+                        </div>
+                        </div>
+                        <div class="work">
+                            <img src="C:\Users\91863\OneDrive\Pictures\Screenshots\images\Screenshot 2023-07-28 221749.png">
+                            <div class="layer">
+                                <h3>Amazon Clone</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------------contact me----------------->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="subtitle">Contact Me</h1>
+                        </div>
+                        <div class="contact-right"></div>
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+       
+    </script>        
+    </body>
+</html>
